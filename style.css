@@ -1,0 +1,247 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffbf0;
+}
+
+#calculator{
+    width: 400px;
+    height: 590px;
+    border: solid black 3px;
+    margin-top: 7.5rem;
+    border-radius: 15px;
+    background-color: #adadad;
+}
+
+#screen{
+    height: 125px;
+    width: 380px;
+    min-width: none;
+    border: solid black 2px;
+    margin: 1.5rem auto 0.3em;
+    border-radius: 10px;
+    background-color: #ebebeb;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+    font-size: 25px;
+}
+
+p{
+    margin: 3px;
+    margin-right: 10px;
+}
+
+#lastScreen{
+    margin-bottom: 35px;
+    
+}
+
+#currentScreen{
+    margin-bottom: 5px;
+}
+
+#containerbuttons{
+    display: grid;
+    grid-template-areas: "clear clear delete delete"
+    "sieben acht neun durch"
+    "vier fünf sechs mal"
+    "eins zwei drei minus"
+    "punkt null istgleich plus"
+    ;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 0;
+    height: 65%;
+    margin-bottom: 1em;
+}
+
+.btn{
+    font-size: 25px;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+#clear{
+    background-color: #ff4f5b;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#clear:hover{
+    background-color: #f2003c
+}
+
+#delete{
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #75bcff;
+}
+
+#delete:hover{
+    background-color: #00c2f2;
+}
+
+.istgleich:hover{
+    background-color: #0a9100;
+}
+
+.istgleich:disabled{
+    color: black;
+}
+
+[data-operator]:hover {
+    background-color: #0030c2;
+}
+
+.btn:hover{
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#clear{
+    grid-area: clear;
+}
+
+#delete{
+    grid-area: delete;
+}
+
+.sieben{
+    grid-area: sieben
+}
+.acht{
+    grid-area: acht;
+}
+.neun{
+    grid-area: neun;
+}
+.mal{
+    grid-area: mal;
+    background-color: #334aff;
+    border: none;
+}
+.vier{
+    grid-area: vier;
+}
+.fünf{
+    grid-area: fünf;
+}
+.sechs{
+    grid-area: sechs;
+}
+.durch{
+    grid-area: durch;
+    background-color: #334aff;
+    border: none;
+}
+.eins{
+    grid-area: eins;
+}
+.zwei{
+    grid-area: zwei;
+}
+.drei{
+    grid-area: drei;
+}
+.punkt{
+    grid-area: punkt;
+}
+.null{
+    grid-area: null;
+}
+.istgleich{
+    grid-area: istgleich;
+    background-color: #00bd23;
+    border: none;
+}
+.plus{
+    grid-area: plus;
+    background-color: #334aff;
+    border: none;
+}
+.minus{
+    background-color: #334aff;
+    border: none;
+}
+

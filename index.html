@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="calculator">
+        <div id="screen">
+          <p id="lastScreen"></p>
+          <p id="currentScreen"></p>
+        </div>
+    <div id="containerbuttons">
+      <button id="clear">CLEAR</button>
+      <button id="delete">DELETE</button>
+
+      <button class="btn sieben" value="7" data-number>7</button>
+      <button class="btn acht" value="8" data-number>8</button>
+      <button class="btn neun" value="9" data-number>9</button>
+      <button class="btn durch" value="÷" data-operator>÷</button>
+
+      <button class="btn vier" value="4" data-number>4</button>
+      <button class="btn fünf" value="5" data-number>5</button>
+      <button class="btn sechs" value="6" data-number>6</button>
+      <button class="btn mal" value="x" data-operator>x</button>
+
+      <button class="btn eins" value="1" data-number>1</button>
+      <button class="btn zwei" value="2" data-number>2</button>
+      <button class="btn drei" value="3" data-number>3</button>
+      <button class="btn minus" value="-" data-operator>-</button>
+
+      <button class="btn punkt" value="." data-number>.</button>
+      <button class="btn null" value="0" data-number>0</button>
+      <button class="btn istgleich" value="=">=</button>
+      <button class="btn plus" value="+" data-operator>+</button>
+    </div>
+</div>
+</body>
+</html>
