@@ -47,12 +47,8 @@ p{
 
 #containerbuttons{
     display: grid;
-    grid-template-areas: "clear clear delete delete"
-    "sieben acht neun durch"
-    "vier fünf sechs mal"
-    "eins zwei drei minus"
-    "punkt null istgleich plus"
-    ;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 10px;
     margin-top: 0;
@@ -67,6 +63,8 @@ p{
 }
 
 #clear{
+    grid-column-start: 1;
+    grid-column-end: 3;
     background-color: #ff4f5b;
     border: none;
     border-radius: 10px;
@@ -78,6 +76,8 @@ p{
 }
 
 #delete{
+    grid-column-start: 3;
+    grid-column-end: 5;
     border: none;
     border-radius: 10px;
     font-size: 20px;
@@ -173,70 +173,20 @@ p{
 
 
 
-
-
-
-
-
-
-#clear{
-    grid-area: clear;
-}
-
-#delete{
-    grid-area: delete;
-}
-
-.sieben{
-    grid-area: sieben
-}
-.acht{
-    grid-area: acht;
-}
-.neun{
-    grid-area: neun;
-}
 .mal{
-    grid-area: mal;
     background-color: #334aff;
     border: none;
-}
-.vier{
-    grid-area: vier;
-}
-.fünf{
-    grid-area: fünf;
-}
-.sechs{
-    grid-area: sechs;
 }
 .durch{
-    grid-area: durch;
     background-color: #334aff;
     border: none;
 }
-.eins{
-    grid-area: eins;
-}
-.zwei{
-    grid-area: zwei;
-}
-.drei{
-    grid-area: drei;
-}
-.punkt{
-    grid-area: punkt;
-}
-.null{
-    grid-area: null;
-}
+
 .istgleich{
-    grid-area: istgleich;
     background-color: #00bd23;
     border: none;
 }
 .plus{
-    grid-area: plus;
     background-color: #334aff;
     border: none;
 }
